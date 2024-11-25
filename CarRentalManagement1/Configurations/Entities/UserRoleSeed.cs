@@ -6,8 +6,6 @@ namespace CarRentalManagement1.Configurations.Entities
 {
     public class UserRoleSeed : IEntityTypeConfiguration<IdentityUserRole<string>>
     {
-       
-
         public void Configure(EntityTypeBuilder<IdentityUserRole<string>> builder)
         {
             builder.HasData(
