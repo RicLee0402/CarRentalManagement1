@@ -1,7 +1,7 @@
 ﻿using CarRentalManagement1.Domains;
 using Microsoft.EntityFrameworkCore;
 
-namespace CarRentalManagement1.Configurations
+namespace CarRentalManagement1.Configurations.Entities
 {
     public class ModelSeed : IEntityTypeConfiguration<Model>
     {
@@ -35,7 +35,7 @@ namespace CarRentalManagement1.Configurations
                     CreatedBy = "System",
                     UpdatedBy = "System"
                 },
-                new Model 
+                new Model
                 {
                     Id = 4,
                     Name = "C-HR",

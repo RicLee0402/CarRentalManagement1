@@ -1,26 +1,26 @@
 ﻿using CarRentalManagement1.Domains;
 using Microsoft.EntityFrameworkCore;
 
-namespace CarRentalManagement1.Configurations
+namespace CarRentalManagement1.Configurations.Entities
 {
-    public class MakeSeed : IEntityTypeConfiguration<Make>
+    public class ColourSeed : IEntityTypeConfiguration<Colour>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Make> builder)
+        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Colour> builder)
         {
             builder.HasData(
-                new Make
+                new Colour
                 {
                     Id = 1,
-                    Name = "BMW",
+                    Name = "Black",
                     DateCreated = DateTime.Now,
                     DateUpdated = DateTime.Now,
                     CreatedBy = "System",
                     UpdatedBy = "System"
                 },
-                new Make 
+                new Colour
                 {
                     Id = 2,
-                    Name = "Toyota",
+                    Name = "Blue",
                     DateCreated = DateTime.Now,
                     DateUpdated = DateTime.Now,
                     CreatedBy = "System",
